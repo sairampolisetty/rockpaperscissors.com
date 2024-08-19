@@ -60,8 +60,8 @@ function playGame(user) {
     }
     localStorage.setItem('score', JSON.stringify(score));
 
-    selection.innerHTML = `You <img src="images/${user}.png" class='imgs'> 
-   <img src="images/${computor}.png" class='imgs'>  computor`;
+    selection.innerHTML = `You <img src="${user}.png" class='imgs'> 
+   <img src="${computor}.png" class='imgs'>  computor`;
     winner.innerHTML = result;
     count.innerHTML = `wins: ${score.Wins} Looses: ${score.Looses} Ties: ${score.Ties}`;
 }
